@@ -1,0 +1,952 @@
+{\rtf1\ansi\ansicpg936\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0  ```html\
+<!DOCTYPE html>\
+<html lang="zh-CN">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>\uc0\u21307 \u30103 \u20581 \u24247 \u25968 \u25454 \u27719 \u20132 \u24037 \u20316 \u32452 \u32455 \u21327 \u35843 \u26426 \u21046 </title>\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">\
+    <style>\
+        body \{\
+            font-family: 'Noto Sans SC', sans-serif;\
+            background: linear-gradient(135deg, #f0f4f8 0%, #e6eef7 100%);\
+        \}\
+        .glass-panel \{\
+            background: rgba(255, 255, 255, 0.85);\
+            backdrop-filter: blur(12px);\
+            border: 1px solid rgba(255, 255, 255, 0.5);\
+        \}\
+        .gradient-text \{\
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);\
+            -webkit-background-clip: text;\
+            -webkit-text-fill-color: transparent;\
+        \}\
+        .flow-line \{\
+            position: relative;\
+        \}\
+        .flow-line::after \{\
+            content: '';\
+            position: absolute;\
+            top: 50%;\
+            right: -20px;\
+            width: 40px;\
+            height: 2px;\
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);\
+            transform: translateY(-50%);\
+        \}\
+        .flow-line:last-child::after \{\
+            display: none;\
+        \}\
+        .org-card \{\
+            transition: all 0.3s ease;\
+        \}\
+        .org-card:hover \{\
+            transform: translateY(-5px);\
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);\
+        \}\
+        .timeline-item \{\
+            position: relative;\
+            padding-left: 30px;\
+        \}\
+        .timeline-item::before \{\
+            content: '';\
+            position: absolute;\
+            left: 0;\
+            top: 8px;\
+            width: 12px;\
+            height: 12px;\
+            background: #3b82f6;\
+            border-radius: 50%;\
+            border: 3px solid #dbeafe;\
+        \}\
+        .timeline-item:not(:last-child)::after \{\
+            content: '';\
+            position: absolute;\
+            left: 5px;\
+            top: 24px;\
+            width: 2px;\
+            height: calc(100% - 16px);\
+            background: #e5e7eb;\
+        \}\
+        .tab-active \{\
+            background: #3b82f6;\
+            color: white;\
+        \}\
+        .tab-inactive \{\
+            background: #f3f4f6;\
+            color: #6b7280;\
+        \}\
+        .tab-inactive:hover \{\
+            background: #e5e7eb;\
+        \}\
+        .mechanism-card \{\
+            border-left: 4px solid;\
+        \}\
+        .mechanism-level-1 \{ border-left-color: #10b981; \}\
+        .mechanism-level-2 \{ border-left-color: #f59e0b; \}\
+        .mechanism-level-3 \{ border-left-color: #ef4444; \}\
+        .mechanism-level-4 \{ border-left-color: #8b5cf6; \}\
+        \
+        @keyframes fadeIn \{\
+            from \{ opacity: 0; transform: translateY(20px); \}\
+            to \{ opacity: 1; transform: translateY(0); \}\
+        \}\
+        .animate-fade-in \{\
+            animation: fadeIn 0.6s ease-out forwards;\
+        \}\
+        .stagger-1 \{ animation-delay: 0.1s; \}\
+        .stagger-2 \{ animation-delay: 0.2s; \}\
+        .stagger-3 \{ animation-delay: 0.3s; \}\
+        .stagger-4 \{ animation-delay: 0.4s; \}\
+    </style>\
+</head>\
+<body class="min-h-screen text-slate-800">\
+\
+    <!-- Header -->\
+    <header class="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-16">\
+        <div class="absolute inset-0 opacity-10">\
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">\
+                <defs>\
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">\
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/>\
+                    </pattern>\
+                </defs>\
+                <rect width="100%" height="100%" fill="url(#grid)" />\
+            </svg>\
+        </div>\
+        <div class="container mx-auto px-6 relative z-10">\
+            <div class="flex items-center justify-between mb-4">\
+                <span class="bg-blue-500/30 backdrop-blur px-4 py-1 rounded-full text-sm font-medium border border-blue-400/30">\
+                    \uc0\u25919 \u21153 \u25968 \u25454 \u20849 \u20139 \u26465 \u20363  \'b7 \u20840 \u22269 \u19968 \u20307 \u21270 \u25919 \u21153 \u22823 \u25968 \u25454 \u20307 \u31995 \
+                </span>\
+                <span class="text-blue-200 text-sm">2026\uc0\u24180 \u23454 \u26045 \u26041 \u26696 </span>\
+            </div>\
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">\
+                \uc0\u21307 \u30103 \u20581 \u24247 \u25968 \u25454 \u27719 \u20132 \u24037 \u20316 <br>\
+                <span class="text-blue-300">\uc0\u32452 \u32455 \u21327 \u35843 \u26426 \u21046 </span>\
+            </h1>\
+            <p class="text-xl text-blue-100 max-w-2xl leading-relaxed">\
+                \uc0\u26500 \u24314 \u36328 \u37096 \u38376 \u12289 \u36328 \u23618 \u32423 \u12289 \u36328 \u19994 \u21153 \u30340 \u25968 \u25454 \u27719 \u20132 \u21327 \u21516 \u20307 \u31995 \u65292 \u23454 \u29616 \u21355 \u29983 \u20581 \u24247 \u12289 \u21307 \u30103 \u20445 \u38556 \u12289 \u29983 \u24577 \u29615 \u22659 \u31561 \u37096 \u38376 \u25968 \u25454 \u39640 \u25928 \u24402 \u38598 \u19982 \u20849 \u20139 \
+            </p>\
+        </div>\
+    </header>\
+\
+    <main class="container mx-auto px-6 py-12 space-y-16">\
+\
+        <!-- Section 1: \uc0\u32452 \u32455 \u26550 \u26500  -->\
+        <section class="animate-fade-in">\
+            <div class="flex items-center mb-8">\
+                <div class="w-1 h-8 bg-blue-600 rounded-full mr-4"></div>\
+                <h2 class="text-3xl font-bold text-slate-800">\uc0\u32452 \u32455 \u26550 \u26500 \u20307 \u31995 </h2>\
+            </div>\
+            \
+            <div class="grid md:grid-cols-3 gap-6">\
+                <!-- \uc0\u20915 \u31574 \u23618  -->\
+                <div class="org-card glass-panel rounded-2xl p-6 shadow-lg border-t-4 border-purple-500">\
+                    <div class="flex items-center mb-4">\
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4">\
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">\
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>\
+                            </svg>\
+                        </div>\
+                        <div>\
+                            <h3 class="text-lg font-bold text-slate-800">\uc0\u20915 \u31574 \u23618 </h3>\
+                            <p class="text-sm text-slate-500">\uc0\u39046 \u23548 \u23567 \u32452 </p>\
+                        </div>\
+                    </div>\
+                    <ul class="space-y-2 text-sm text-slate-600">\
+                        <li class="flex items-start">\
+                            <span class="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>\
+                            <span>\uc0\u25919 \u24220 \u20998 \u31649 \u36127 \u36131 \u21516 \u24535 \u20219 \u32452 \u38271 </span>\
+                        </li>\
+                        <li class="flex items-start">\
+                            <span class="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>\
+                            <span>\uc0\u21508 \u25104 \u21592 \u21333 \u20301 \u20027 \u35201 \u36127 \u36131 \u20154 \u20026 \u25104 \u21592 </span>\
+                        </li>\
+                        <li class="flex items-start">\
+                            <span class="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>\
+                            <span>\uc0\u36127 \u36131 \u37325 \u22823 \u20107 \u39033 \u20915 \u31574 \u19982 \u32479 \u31609 \u21327 \u35843 </span>\
+                        </li>\
+                    </ul>\
+                </div>\
+\
+                <!-- \uc0\u21327 \u35843 \u23618  -->\
+                <div class="org-card glass-panel rounded-2xl p-6 shadow-lg border-t-4 border-blue-500">\
+                    <div class="flex items-center mb-4">\
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4">\
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">\
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>\
+                            </svg>\
+                        </div>\
+                        <div>\
+                            <h3 class="text-lg font-bold text-slate-800">\uc0\u21327 \u35843 \u23618 </h3>\
+                            <p class="text-sm text-slate-500">\uc0\u21327 \u35843 \u21150 \u20844 \u23460 </p>\
+                        </div>\
+                    </div>\
+                    <ul class="space-y-2 text-sm text-slate-600">\
+                        <li class="flex items-start">\
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>\
+                            <span>\uc0\u35774 \u22312 \u25968 \u25454 \u23616 /\u22823 \u25968 \u25454 \u20027 \u31649 \u37096 \u38376 </span>\
+                        </li>\
+                        <li class="flex items-start">\
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>\
+                            <span>\uc0\u23454 \u20307 \u21270 \u36816 \u34892 \u65292 \u37197 \u22791 \u19987 \u32844 \u20154 \u21592 </span>\
+                        </li>\
+                        <li class="flex items-start">\
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>\
+                            <span>\uc0\u26085 \u24120 \u21327 \u35843 \u12289 \u36827 \u24230 \u30563 \u21150 \u12289 \u20105 \u35758 \u22788 \u29702 </span>\
+                        </li>\
+                    </ul>\
+                </div>\
+\
+                <!-- \uc0\u25191 \u34892 \u23618  -->\
+                <div class="org-card glass-panel rounded-2xl p-6 shadow-lg border-t-4 border-emerald-500">\
+                    <div class="flex items-center mb-4">\
+                        <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mr-4">\
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">\
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>\
+                            </svg>\
+                        </div>\
+                        <div>\
+                            <h3 class="text-lg font-bold text-slate-800">\uc0\u25191 \u34892 \u23618 </h3>\
+                            <p class="text-sm text-slate-500">\uc0\u24037 \u20316 \u19987 \u29677 </p>\
+                        </div>\
+                    </div>\
+                    <ul class="space-y-2 text-sm text-slate-600">\
+                        <li class="flex items-start">\
+                            <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>\
+                            <span>\uc0\u21355 \u29983 \u20581 \u24247 \u12289 \u21307 \u20445 \u12289 \u29983 \u24577 \u29615 \u22659 \u31561 \u37096 \u38376 </span>\
+                        </li>\
+                        <li class="flex items-start">\
+                            <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>\
+                            <span>\uc0\u19994 \u21153 \u39592 \u24178 \u38598 \u20013 \u21150 \u20844 </span>\
+                        </li>\
+                        <li class="flex items-start">\
+                            <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>\
+                            <span>\uc0\u36127 \u36131 \u20855 \u20307 \u27719 \u20132 \u23454 \u26045 \u19982 \u25216 \u26415 \u23545 \u25509 </span>\
+                        </li>\
+                    </ul>\
+                </div>\
+            </div>\
+\
+            <!-- \uc0\u37096 \u38376 \u32844 \u36131 \u30697 \u38453  -->\
+            <div class="mt-8 glass-panel rounded-2xl p-8 shadow-lg">\
+                <h3 class="text-xl font-bold mb-6 text-slate-800">\uc0\u37096 \u38376 \u32844 \u36131 \u20998 \u24037 \u30697 \u38453 </h3>\
+                <div class="overflow-x-auto">\
+                    <table class="w-full text-sm">\
+                        <thead>\
+                            <tr class="border-b-2 border-slate-200">\
+                                <th class="text-left py-3 px-4 font-bold text-slate-700">\uc0\u37096 \u38376 \u35282 \u33394 </th>\
+                                <th class="text-left py-3 px-4 font-bold text-slate-700">\uc0\u34892 \u25919 \u32844 \u36131 \u23450 \u20301 </th>\
+                                <th class="text-left py-3 px-4 font-bold text-slate-700">\uc0\u27719 \u20132 \u24037 \u20316 \u20855 \u20307 \u32844 \u36131 </th>\
+                            </tr>\
+                        </thead>\
+                        <tbody class="divide-y divide-slate-100">\
+                            <tr class="hover:bg-blue-50/50 transition-colors">\
+                                <td class="py-4 px-4 font-medium text-blue-700">\uc0\u25968 \u25454 \u20027 \u31649 \u37096 \u38376 <br><span class="text-xs text-slate-500">(\u25968 \u25454 \u23616 /\u22823 \u25968 \u25454 \u23616 )</span></td>\
+                                <td class="py-4 px-4 text-slate-600">\uc0\u32479 \u31609 \u21327 \u35843 \u12289 \u24179 \u21488 \u24314 \u35774 \u12289 \u26631 \u20934 \u21046 \u23450 </td>\
+                                <td class="py-4 px-4 text-slate-600">\uc0\u24314 \u31435 \u20379 \u38656 \u23545 \u25509 \u26426 \u21046 \u65292 \u32534 \u21046 \u25968 \u25454 \u30446 \u24405 \u65292 \u21327 \u35843 \u36328 \u37096 \u38376 \u20105 \u35758 \u65292 \u30417 \u30563 \u32771 \u26680 \u27719 \u20132 \u36827 \u24230 </td>\
+                            </tr>\
+                            <tr class="hover:bg-blue-50/50 transition-colors">\
+                                <td class="py-4 px-4 font-medium text-emerald-700">\uc0\u21355 \u29983 \u20581 \u24247 \u37096 \u38376 <br><span class="text-xs text-slate-500">(\u25968 \u28304 \u37096 \u38376 )</span></td>\
+                                <td class="py-4 px-4 text-slate-600">\uc0\u21307 \u30103 \u26381 \u21153 \u30417 \u31649 \u12289 \u20844 \u20849 \u21355 \u29983 \u31649 \u29702 </td>\
+                                <td class="py-4 px-4 text-slate-600">\uc0\u29301 \u22836 \u24402 \u38598 \u35786 \u30103 \u12289 \u20844 \u21355 \u12289 \u26426 \u26500 \u31561 \u25968 \u25454 \u65292 \u30830 \u20445 \u25968 \u25454 \u23436 \u25972 \u24615 \u12289 \u20934 \u30830 \u24615 \u12289 \u21487 \u29992 \u24615 </td>\
+                            </tr>\
+                            <tr class="hover:bg-blue-50/50 transition-colors">\
+                                <td class="py-4 px-4 font-medium text-amber-700">\uc0\u21307 \u30103 \u20445 \u38556 \u37096 \u38376 </td>\
+                                <td class="py-4 px-4 text-slate-600">\uc0\u21307 \u20445 \u22522 \u37329 \u31649 \u29702 \u12289 \u25903 \u20184 \u32467 \u31639 </td>\
+                                <td class="py-4 px-4 text-slate-600">\uc0\u24402 \u38598 \u21442 \u20445 \u12289 \u32467 \u31639 \u12289 \u25903 \u20184 \u12289 \u30417 \u31649 \u25968 \u25454 \u65292 \u21327 \u21516 \u25512 \u36827 "\u19977 \u21307 \u32852 \u21160 "\u25968 \u25454 \u27719 \u20132 </td>\
+                            </tr>\
+                            <tr class="hover:bg-blue-50/50 transition-colors">\
+                                <td class="py-4 px-4 font-medium text-cyan-700">\uc0\u29983 \u24577 \u29615 \u22659 \u37096 \u38376 </td>\
+                                <td class="py-4 px-4 text-slate-600">\uc0\u29615 \u22659 \u36136 \u37327 \u30417 \u27979 \u12289 \u20581 \u24247 \u31649 \u29702 </td>\
+                                <td class="py-4 px-4 text-slate-600">\uc0\u24402 \u38598 \u29615 \u22659 \u20581 \u24247 \u30417 \u27979 \u12289 \u27745 \u26579 \u28304 \u25968 \u25454 \u65292 \u24314 \u31435 \u29615 \u22659 \u20581 \u24247 \u25968 \u25454 \u21327 \u21516 \u26426 \u21046 </td>\
+                            </tr>\
+                        </tbody>\
+                    </table>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- Section 2: \uc0\u27719 \u20132 \u27969 \u31243  -->\
+        <section class="animate-fade-in stagger-1">\
+            <div class="flex items-center mb-8">\
+                <div class="w-1 h-8 bg-blue-600 rounded-full mr-4"></div>\
+                <h2 class="text-3xl font-bold text-slate-800">\uc0\u25968 \u25454 \u27719 \u20132 \u24037 \u20316 \u27969 \u31243 </h2>\
+            </div>\
+\
+            <!-- \uc0\u27969 \u31243 \u38454 \u27573 \u26631 \u31614  -->\
+            <div class="flex flex-wrap gap-2 mb-8">\
+                <button onclick="switchTab('stage1')" id="tab-stage1" class="tab-active px-6 py-3 rounded-full font-medium transition-all text-sm md:text-base">\uc0\u38454 \u27573 \u19968 \u65306 \u30446 \u24405 \u32534 \u21046 </button>\
+                <button onclick="switchTab('stage2')" id="tab-stage2" class="tab-inactive px-6 py-3 rounded-full font-medium transition-all text-sm md:text-base">\uc0\u38454 \u27573 \u20108 \u65306 \u24402 \u38598 \u23454 \u26045 </button>\
+                <button onclick="switchTab('stage3')" id="tab-stage3" class="tab-inactive px-6 py-3 rounded-full font-medium transition-all text-sm md:text-base">\uc0\u38454 \u27573 \u19977 \u65306 \u25345 \u32493 \u32500 \u25252 </button>\
+            </div>\
+\
+            <!-- \uc0\u38454 \u27573 \u19968 \u20869 \u23481  -->\
+            <div id="content-stage1" class="glass-panel rounded-2xl p-8 shadow-lg">\
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">\
+                    <div class="bg-white rounded-xl p-5 border border-slate-200 flow-line">\
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3 text-blue-600 font-bold">1</div>\
+                        <h4 class="font-bold text-slate-800 mb-2">\uc0\u36164 \u28304 \u25720 \u24213 </h4>\
+                        <p class="text-sm text-slate-600 mb-3">\uc0\u20840 \u38754 \u26803 \u29702 \u26412 \u37096 \u38376 \u25968 \u25454 \u36164 \u28304 \u24213 \u25968 </p>\
+                        <div class="flex items-center text-xs text-slate-500">\
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>\
+                            2\uc0\u21608 \u20869 \u23436 \u25104 \
+                        </div>\
+                    </div>\
+                    <div class="bg-white rounded-xl p-5 border border-slate-200 flow-line">\
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3 text-blue-600 font-bold">2</div>\
+                        <h4 class="font-bold text-slate-800 mb-2">\uc0\u30446 \u24405 \u32534 \u21046 </h4>\
+                        <p class="text-sm text-slate-600 mb-3">\uc0\u25353 \u32479 \u19968 \u26631 \u20934 \u32534 \u21046 \u25919 \u21153 \u25968 \u25454 \u30446 \u24405 </p>\
+                        <div class="flex items-center text-xs text-slate-500">\
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>\
+                            2\uc0\u21608 \u20869 \u23436 \u25104 \
+                        </div>\
+                    </div>\
+                    <div class="bg-white rounded-xl p-5 border border-slate-200 flow-line">\
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3 text-blue-600 font-bold">3</div>\
+                        <h4 class="font-bold text-slate-800 mb-2">\uc0\u20379 \u38656 \u23545 \u25509 </h4>\
+                        <p class="text-sm text-slate-600 mb-3">\uc0\u19994 \u21153 \u39592 \u24178 \u29616 \u22330 \u20132 \u27969 \u65292 \u25970 \u23450 \u24212 \u29992 \u22330 \u26223 </p>\
+                        <div class="flex items-center text-xs text-slate-500">\
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>\
+                            1\uc0\u21608 \u20869 \u23436 \u25104 \
+                        </div>\
+                    </div>\
+                    <div class="bg-white rounded-xl p-5 border border-slate-200">\
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3 text-blue-600 font-bold">4</div>\
+                        <h4 class="font-bold text-slate-800 mb-2">\uc0\u28165 \u21333 \u30830 \u23450 </h4>\
+                        <p class="text-sm text-slate-600 mb-3">\uc0\u30830 \u23450 \u25968 \u25454 \u27719 \u20132 \u36131 \u20219 \u28165 \u21333 </p>\
+                        <div class="flex items-center text-xs text-slate-500">\
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>\
+                            1\uc0\u21608 \u20869 \u23436 \u25104 \
+                        </div>\
+                    </div>\
+                </div>\
+                <div class="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">\
+                    <p class="text-sm text-blue-800"><strong>\uc0\u20851 \u38190 \u20135 \u20986 \u65306 </strong>\u12298 \u21307 \u30103 \u20581 \u24247 \u25968 \u25454 \u27719 \u20132 \u36131 \u20219 \u28165 \u21333 \u12299 \u27491 \u24335 \u21457 \u24067 \u65292 \u26126 \u30830 \u25552 \u20379 \u37096 \u38376 \u12289 \u25968 \u25454 \u20869 \u23481 \u12289 \u27719 \u20132 \u26102 \u38480 </p>\
+                </div>\
+            </div>\
+\
+            <!-- \uc0\u38454 \u27573 \u20108 \u20869 \u23481 \u65288 \u40664 \u35748 \u38544 \u34255 \u65289  -->\
+            <div id="content-stage2" class="glass-panel rounded-2xl p-8 shadow-lg hidden">\
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">\
+                    <div class="flex-1 text-center p-4 bg-white rounded-xl border-2 border-blue-200">\
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">\
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>\
+                        </div>\
+                        <h4 class="font-bold text-slate-800">\uc0\u25968 \u25454 \u25277 \u21462 </h4>\
+                        <p class="text-xs text-slate-500 mt-1">\uc0\u20174 \u19994 \u21153 \u31995 \u32479 \u25277 \u21462 \u21407 \u22987 \u25968 \u25454 </p>\
+                    </div>\
+                    <div class="text-slate-400">\
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>\
+                    </div>\
+                    <div class="flex-1 text-center p-4 bg-white rounded-xl border-2 border-amber-200">\
+                        <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-2">\
+                            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>\
+                        </div>\
+                        <h4 class="font-bold text-slate-800">\uc0\u28165 \u27927 \u36716 \u25442 </h4>\
+                        <p class="text-xs text-slate-500 mt-1">\uc0\u26631 \u20934 \u26144 \u23556 \u12289 \u26684 \u24335 \u36716 \u25442 </p>\
+                    </div>\
+                    <div class="text-slate-400">\
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>\
+                    </div>\
+                    <div class="flex-1 text-center p-4 bg-white rounded-xl border-2 border-emerald-200">\
+                        <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-2">\
+                            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>\
+                        </div>\
+                        <h4 class="font-bold text-slate-800">\uc0\u36136 \u37327 \u26657 \u39564 </h4>\
+                        <p class="text-xs text-slate-500 mt-1">\uc0\u23436 \u25972 \u24615 \u12289 \u20934 \u30830 \u24615 \u26816 \u26597 </p>\
+                    </div>\
+                    <div class="text-slate-400">\
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>\
+                    </div>\
+                    <div class="flex-1 text-center p-4 bg-white rounded-xl border-2 border-purple-200">\
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">\
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>\
+                        </div>\
+                        <h4 class="font-bold text-slate-800">\uc0\u25968 \u25454 \u20837 \u20179 </h4>\
+                        <p class="text-xs text-slate-500 mt-1">\uc0\u27719 \u20837 \u20849 \u20139 \u24179 \u21488 \u25968 \u25454 \u20179 \u24211 </p>\
+                    </div>\
+                </div>\
+                <div class="flex items-center justify-center">\
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-4 flex items-center max-w-md">\
+                        <svg class="w-5 h-5 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>\
+                        <p class="text-sm text-red-700">\uc0\u38382 \u39064 \u25968 \u25454 \u36864 \u22238 \u25972 \u25913 \u26426 \u21046 \u65306 \u36136 \u37327 \u26657 \u39564 \u19981 \u36890 \u36807 \u30340 \u25968 \u25454 \u33258 \u21160 \u36864 \u22238 \u25552 \u20379 \u37096 \u38376 \u37325 \u26032 \u22788 \u29702 </p>\
+                    </div>\
+                </div>\
+            </div>\
+\
+            <!-- \uc0\u38454 \u27573 \u19977 \u20869 \u23481 \u65288 \u40664 \u35748 \u38544 \u34255 \u65289  -->\
+            <div id="content-stage3" class="glass-panel rounded-2xl p-8 shadow-lg hidden">\
+                <div class="grid md:grid-cols-3 gap-6">\
+                    <div class="bg-white rounded-xl p-6 border border-slate-200">\
+                        <div class="flex items-center mb-4">\
+                            <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-3">\
+                                <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>\
+                            </div>\
+                            <h4 class="font-bold text-slate-800">\uc0\u26356 \u26032 \u26426 \u21046 </h4>\
+                        </div>\
+                        <ul class="space-y-2 text-sm text-slate-600">\
+                            <li>\'95 \uc0\u24211 \u34920 \u20132 \u25442 \u65306 \u19994 \u21153 \u24211 \u21464 \u21270 \u24403 \u26085 \u26356 \u26032 \u21069 \u32622 \u24211 </li>\
+                            <li>\'95 \uc0\u25509 \u21475 \u35843 \u29992 \u65306 \u23454 \u26102 \u25110 \u20934 \u23454 \u26102 \u25968 \u25454 \u21516 \u27493 </li>\
+                            <li>\'95 \uc0\u25991 \u20214 \u20132 \u25442 \u65306 \u25353 \u32422 \u23450 \u21608 \u26399 \u25209 \u37327 \u26356 \u26032 </li>\
+                        </ul>\
+                    </div>\
+                    <div class="bg-white rounded-xl p-6 border border-slate-200">\
+                        <div class="flex items-center mb-4">\
+                            <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center mr-3">\
+                                <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>\
+                            </div>\
+                            <h4 class="font-bold text-slate-800">\uc0\u36136 \u37327 \u21453 \u39304 </h4>\
+                        </div>\
+                        <ul class="space-y-2 text-sm text-slate-600">\
+                            <li>\'95 \uc0\u20351 \u29992 \u37096 \u38376 \u36890 \u36807 \u24179 \u21488 "\u32416 \u38169 "\u21151 \u33021 \u21453 \u39304 </li>\
+                            <li>\'95 \uc0\u25552 \u20379 \u37096 \u38376 3\u20010 \u24037 \u20316 \u26085 \u20869 \u22788 \u29702 </li>\
+                            <li>\'95 \uc0\u24314 \u31435 \u36136 \u37327 \u38382 \u39064 \u21488 \u36134 \u36319 \u36394 </li>\
+                        </ul>\
+                    </div>\
+                    <div class="bg-white rounded-xl p-6 border border-slate-200">\
+                        <div class="flex items-center mb-4">\
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">\
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>\
+                            </div>\
+                            <h4 class="font-bold text-slate-800">\uc0\u26657 \u26680 \u32416 \u38169 </h4>\
+                        </div>\
+                        <ul class="space-y-2 text-sm text-slate-600">\
+                            <li>\'95 \uc0\u38656 \u27714 \u37096 \u38376 \u25552 \u20986 \u26657 \u26680 \u30003 \u35831 </li>\
+                            <li>\'95 \uc0\u25552 \u20379 \u37096 \u38376 10\u20010 \u24037 \u20316 \u26085 \u20869 \u26680 \u23454 </li>\
+                            <li>\'95 \uc0\u26356 \u27491 \u21518 \u21453 \u39304 \u24182 \u21516 \u27493 \u26356 \u26032 </li>\
+                        </ul>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- Section 3: \uc0\u22235 \u32423 \u21327 \u35843 \u26426 \u21046  -->\
+        <section class="animate-fade-in stagger-2">\
+            <div class="flex items-center mb-8">\
+                <div class="w-1 h-8 bg-blue-600 rounded-full mr-4"></div>\
+                <h2 class="text-3xl font-bold text-slate-800">\uc0\u22235 \u32423 \u21327 \u35843 \u26426 \u21046 </h2>\
+            </div>\
+\
+            <div class="grid md:grid-cols-2 gap-6">\
+                <!-- \uc0\u19968 \u32423  -->\
+                <div class="mechanism-card mechanism-level-1 bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">\
+                    <div class="flex justify-between items-start mb-4">\
+                        <div>\
+                            <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold mb-2">\uc0\u19968 \u32423 \u21327 \u35843 </span>\
+                            <h3 class="text-lg font-bold text-slate-800">\uc0\u19994 \u21153 \u21327 \u21830 </h3>\
+                        </div>\
+                        <div class="text-2xl font-bold text-emerald-600">3\uc0\u26085 </div>\
+                    </div>\
+                    <div class="space-y-3 text-sm">\
+                        <div class="flex items-start">\
+                            <span class="font-medium text-slate-700 w-20 flex-shrink-0">\uc0\u35302 \u21457 \u26465 \u20214 \u65306 </span>\
+                            <span class="text-slate-600">\uc0\u25968 \u25454 \u39033 \u21547 \u20041 \u12289 \u26684 \u24335 \u31561 \u25216 \u26415 \u38382 \u39064 </span>\
+                        </div>\
+                        <div class="flex items-start">\
+                            <span class="font-medium text-slate-700 w-20 flex-shrink-0">\uc0\u21327 \u35843 \u20027 \u20307 \u65306 </span>\
+                            <span class="text-slate-600">\uc0\u25968 \u25454 \u25552 \u20379 \u37096 \u38376  \u8596  \u25968 \u25454 \u38656 \u27714 \u37096 \u38376 </span>\
+                        </div>\
+                        <div class="flex items-start">\
+                            <span class="font-medium text-slate-700 w-20 flex-shrink-0">\uc0\u21327 \u35843 \u26041 \u24335 \u65306 </span>\
+                            <span class="text-slate-600">\uc0\u32447 \u19978 \u27807 \u36890 \u12289 \u25216 \u26415 \u23545 \u25509 \u20250 </span>\
+                        </div>\
+                    </div>\
+                </div>\
+\
+                <!-- \uc0\u20108 \u32423  -->\
+                <div class="mechanism-card mechanism-level-2 bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">\
+                    <div class="flex justify-between items-start mb-4">\
+                        <div>\
+                            <span class="inline-block px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold mb-2">\uc0\u20108 \u32423 \u21327 \u35843 </span>\
+                            <h3 class="text-lg font-bold text-slate-800">\uc0\u19987 \u29677 \u21327 \u35843 </h3>\
+                        </div>\
+                        <div class="text-2xl font-bold text-amber-600">5\uc0\u26085 </div>\
+                    </div>\
+                    <div class="space-y-3 text-sm">\
+                        <div class="flex items-start">\
+                            <span class="font-medium text-slate-700 w-20 flex-shrink-0">\uc0\u35302 \u21457 \u26465 \u20214 \u65306 </span>\
+                            <span class="text-slate-600">\uc0\u37096 \u38376 \u38388 \u21327 \u21830 \u19981 \u25104 \u25110 \u28041 \u21450 \u22810 \u37096 \u38376 </span>\
+                        </div>\
+                        <div class="flex items-start">\
+                            <span class="font-medium text-slate-700 w-20 flex-shrink-0">\uc0\u21327 \u35843 \u20027 \u20307 \u65306 </span>\
+                            <span class="text-slate-600">\uc0\u25968 \u25454 \u27719 \u20132 \u24037 \u20316 \u19987 \u29677 </span>\
+                        </div>\
+                        <div class="flex items-start">\
+                            <span class="font-medium text-slate-700 w-20 flex-shrink-0">\uc0\u21327 \u35843 \u26041 \u24335 \u65306 </span>\
+                            <span class="text-slate-600">\uc0\u19987 \u39064 \u21327 \u35843 \u20250 \u12289 \u29616 \u22330 \u21150 \u20844 </span>\
+                        </div>\
+                    </div>\
+                </div>\
+\
+                <!-- \uc0\u19977 \u32423  -->\
+                <div class="mechanism-card mechanism-level-3 bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">\
+                    <div class="flex justify-between items-start mb-4">\
+                        <div>\
+                            <span class="inline-block px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold mb-2">\uc0\u19977 \u32423 \u21327 \u35843 </span>\
+                            <h3 class="text-lg font-bold text-slate-800">\uc0\u21150 \u20844 \u23460 \u21327 \u35843 </h3>\
+                        </div>\
+                        <div class="text-2xl font-bold text-red-600">10\uc0\u26085 </div>\
+                    </div>\
+                    <div class="space-y-3 text-sm">\
+                        <div class="flex items-start">\
+                            <span class="font-medium text-slate-700 w-20 flex-shrink-0">\uc0\u35302 \u21457 \u26465 \u20214 \u65306 </span>\
+                            <span class="text-slate-600">\uc0\u19987 \u29677 \u21327 \u35843 \u26410 \u26524 \u25110 \u37325 \u22823 \u20998 \u27495 </span>\
+                        </div>\
+                        <div class="flex items-start">\
+                            <span class="font-medium text-slate-700 w-20 flex-shrink-0">\uc0\u21327 \u35843 \u20027 \u20307 \u65306 </span>\
+                            <span class="text-slate-600">\uc0\u25968 \u25454 \u27719 \u20132 \u21327 \u35843 \u21150 \u20844 \u23460 </span>\
+                        </div>\
+                        <div class="flex items-start">\
+                            <span class="font-medium text-slate-700 w-20 flex-shrink-0">\uc0\u21327 \u35843 \u26041 \u24335 \u65306 </span>\
+                            <span class="text-slate-600">\uc0\u27491 \u24335 \u21327 \u35843 \u20989 \u12289 \u32422 \u35848 \u30563 \u21150 </span>\
+                        </div>\
+                    </div>\
+                </div>\
+\
+                <!-- \uc0\u22235 \u32423  -->\
+                <div class="mechanism-card mechanism-level-4 bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">\
+                    <div class="flex justify-between items-start mb-4">\
+                        <div>\
+                            <span class="inline-block px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-bold mb-2">\uc0\u22235 \u32423 \u21327 \u35843 </span>\
+                            <h3 class="text-lg font-bold text-slate-800">\uc0\u39046 \u23548 \u23567 \u32452 \u20915 \u31574 </h3>\
+                        </div>\
+                        <div class="text-2xl font-bold text-purple-600">15\uc0\u26085 </div>\
+                    </div>\
+                    <div class="space-y-3 text-sm">\
+                        <div class="flex items-start">\
+                            <span class="font-medium text-slate-700 w-20 flex-shrink-0">\uc0\u35302 \u21457 \u26465 \u20214 \u65306 </span>\
+                            <span class="text-slate-600">\uc0\u28041 \u21450 \u37325 \u22823 \u25919 \u31574 \u25110 \u36328 \u37096 \u38376 \u26435 \u36131 \u20105 \u35758 </span>\
+                        </div>\
+                        <div class="flex items-start">\
+                            <span class="font-medium text-slate-700 w-20 flex-shrink-0">\uc0\u21327 \u35843 \u20027 \u20307 \u65306 </span>\
+                            <span class="text-slate-600">\uc0\u25968 \u25454 \u27719 \u20132 \u24037 \u20316 \u39046 \u23548 \u23567 \u32452 </span>\
+                        </div>\
+                        <div class="flex items-start">\
+                            <span class="font-medium text-slate-700 w-20 flex-shrink-0">\uc0\u21327 \u35843 \u26041 \u24335 \u65306 </span>\
+                            <span class="text-slate-600">\uc0\u39046 \u23548 \u23567 \u32452 \u20250 \u35758 \u12289 \u25919 \u24220 \u20915 \u31574 </span>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+\
+            <div class="mt-6 p-6 bg-slate-50 rounded-xl border border-slate-200">\
+                <h4 class="font-bold text-slate-800 mb-3 flex items-center">\
+                    <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>\
+                    \uc0\u21327 \u35843 \u21407 \u21017 \
+                </h4>\
+                <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-600">\
+                    <div class="flex items-start">\
+                        <span class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs font-bold mr-3 mt-0.5 flex-shrink-0">1</span>\
+                        <span>\uc0\u21516 \u32423 \u37096 \u38376 \u21327 \u21830 \u35299 \u20915 \u65292 \u21327 \u21830 \u19981 \u25104 \u21521 \u25968 \u25454 \u20027 \u31649 \u37096 \u38376 \u30003 \u35831 \u21327 \u35843 </span>\
+                    </div>\
+                    <div class="flex items-start">\
+                        <span class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs font-bold mr-3 mt-0.5 flex-shrink-0">2</span>\
+                        <span>\uc0\u36328 \u23618 \u32423 \u20105 \u35758 \u30001 \u20849 \u21516 \u19978 \u32423 \u20027 \u31649 \u37096 \u38376 \u21327 \u35843 </span>\
+                    </div>\
+                    <div class="flex items-start">\
+                        <span class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs font-bold mr-3 mt-0.5 flex-shrink-0">3</span>\
+                        <span>\uc0\u20173 \u26410 \u36798 \u25104 \u19968 \u33268 \u25253 \u26412 \u32423 \u20154 \u27665 \u25919 \u24220 \u20915 \u23450 </span>\
+                    </div>\
+                    <div class="flex items-start">\
+                        <span class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs font-bold mr-3 mt-0.5 flex-shrink-0">4</span>\
+                        <span>\uc0\u24314 \u31435 "\u36127 \u38754 \u28165 \u21333 "\u21046 \u24230 \u65292 \u38500 \u27861 \u24459 \u31105 \u27490 \u22806 \u19968 \u24459 \u20849 \u20139 </span>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- Section 4: \uc0\u29305 \u27530 \u22330 \u26223  -->\
+        <section class="animate-fade-in stagger-3">\
+            <div class="flex items-center mb-8">\
+                <div class="w-1 h-8 bg-blue-600 rounded-full mr-4"></div>\
+                <h2 class="text-3xl font-bold text-slate-800">\uc0\u29305 \u27530 \u22330 \u26223 \u21327 \u35843 \u26426 \u21046 </h2>\
+            </div>\
+\
+            <div class="space-y-6">\
+                <!-- \uc0\u22330 \u26223 \u19968  -->\
+                <div class="glass-panel rounded-2xl p-6 shadow-lg">\
+                    <div class="flex items-center mb-4">\
+                        <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">\
+                            <span class="text-indigo-600 font-bold">01</span>\
+                        </div>\
+                        <h3 class="text-xl font-bold text-slate-800">\uc0\u22402 \u31649 \u31995 \u32479 \u25968 \u25454 \u27719 \u20132 </h3>\
+                    </div>\
+                    <div class="grid md:grid-cols-3 gap-4">\
+                        <div class="bg-white rounded-lg p-4 border border-slate-200">\
+                            <h4 class="font-bold text-slate-700 mb-2 text-sm">\uc0\u19978 \u32423 \u32479 \u24314 \u31995 \u32479 </h4>\
+                            <p class="text-xs text-slate-600">\uc0\u30001 \u24066 \u32423 \u37096 \u38376 \u23545 \u25509 \u19978 \u32423 \u37096 \u38376 \u65292 \u24320 \u23637 \u25968 \u25454 \u22238 \u27969 \u12290 \u24066 \u32423 \u19994 \u21153 \u37096 \u38376 \u29301 \u22836 \u65292 \u25968 \u25454 \u23616 \u37197 \u21512 \u25216 \u26415 \u23545 \u25509 \u12290 </p>\
+                        </div>\
+                        <div class="bg-white rounded-lg p-4 border border-slate-200">\
+                            <h4 class="font-bold text-slate-700 mb-2 text-sm">\uc0\u26412 \u37096 \u38376 \u33258 \u24314 \u31995 \u32479 </h4>\
+                            <p class="text-xs text-slate-600">\uc0\u30001 \u24066 \u32423 \u37096 \u38376 \u25972 \u21512 \u26412 \u31995 \u32479 \u25968 \u25454 \u21518 \u32479 \u19968 \u36755 \u20986 \u12290 \u24066 \u32423 \u19994 \u21153 \u37096 \u38376 \u36127 \u36131 \u21521 \u19979 \u32423 \u37096 \u38376 \u25968 \u25454 \u22238 \u27969 \u12290 </p>\
+                        </div>\
+                        <div class="bg-white rounded-lg p-4 border border-slate-200">\
+                            <h4 class="font-bold text-slate-700 mb-2 text-sm">\uc0\u26426 \u26500 \u25913 \u38761 \u36807 \u28193 \u26399 </h4>\
+                            <p class="text-xs text-slate-600">\uc0\u21484 \u24320 \u19987 \u39064 \u35843 \u24230 \u20250 \u65292 \u25353 \u32844 \u33021 \u21010 \u36716 \u26102 \u38388 \u33410 \u28857 \u21508 \u33258 \u25972 \u29702 \u27719 \u24635 \u12290 \u25968 \u25454 \u23616 \u21327 \u35843 \u65292 \u30456 \u20851 \u37096 \u38376 \u25353 \u26102 \u38388 \u33410 \u28857 \u20132 \u25509 \u12290 </p>\
+                        </div>\
+                    </div>\
+                </div>\
+\
+                <!-- \uc0\u22330 \u26223 \u20108  -->\
+                <div class="glass-panel rounded-2xl p-6 shadow-lg">\
+                    <div class="flex items-center mb-4">\
+                        <div class="w-10 h-10 bg-rose-100 rounded-lg flex items-center justify-center mr-3">\
+                            <span class="text-rose-600 font-bold">02</span>\
+                        </div>\
+                        <h3 class="text-xl font-bold text-slate-800">\uc0\u36328 \u37096 \u38376 \u25968 \u25454 \u21327 \u21516 \u27719 \u20132 \u65306 \u21307 \u30103 \u25937 \u21161 \u23545 \u35937 \u31934 \u20934 \u35782 \u21035 </h3>\
+                    </div>\
+                    <div class="bg-white rounded-xl p-6 border-2 border-slate-100">\
+                        <div class="flex flex-wrap items-center justify-center gap-4">\
+                            <div class="text-center p-4 bg-blue-50 rounded-lg border border-blue-200">\
+                                <div class="font-bold text-blue-800 text-sm mb-1">\uc0\u27665 \u25919 \u37096 \u38376 </div>\
+                                <div class="text-xs text-blue-600">\uc0\u29305 \u22256 \u20154 \u21592 \u12289 \u20302 \u20445 \u23545 \u35937 \u20449 \u24687 </div>\
+                            </div>\
+                            <div class="text-slate-400">+</div>\
+                            <div class="text-center p-4 bg-amber-50 rounded-lg border border-amber-200">\
+                                <div class="font-bold text-amber-800 text-sm mb-1">\uc0\u21307 \u20445 \u37096 \u38376 </div>\
+                                <div class="text-xs text-amber-600">\uc0\u21442 \u20445 \u25968 \u25454 \u12289 \u21307 \u30103 \u36153 \u29992 \u32467 \u31639 </div>\
+                            </div>\
+                            <div class="text-slate-400">+</div>\
+                            <div class="text-center p-4 bg-emerald-50 rounded-lg border border-emerald-200">\
+                                <div class="font-bold text-emerald-800 text-sm mb-1">\uc0\u20065 \u26449 \u25391 \u20852 \u37096 \u38376 </div>\
+                                <div class="text-xs text-emerald-600">\uc0\u38450 \u36820 \u36139 \u30417 \u27979 \u23545 \u35937 \u20449 \u24687 </div>\
+                            </div>\
+                            <div class="text-slate-400">\uc0\u8594 </div>\
+                            <div class="text-center p-4 bg-purple-50 rounded-lg border border-purple-200">\
+                                <div class="font-bold text-purple-800 text-sm mb-1">\uc0\u25968 \u25454 \u23616 </div>\
+                                <div class="text-xs text-purple-600">\uc0\u27604 \u23545 \u24179 \u21488 \u32479 \u19968 \u26631 \u35782 </div>\
+                            </div>\
+                            <div class="text-slate-400">\uc0\u8594 </div>\
+                            <div class="text-center p-4 bg-slate-100 rounded-lg border border-slate-300">\
+                                <div class="font-bold text-slate-800 text-sm mb-1">\uc0\u21508 \u37096 \u38376 \u24212 \u29992 </div>\
+                                <div class="text-xs text-slate-600">\uc0\u31934 \u20934 \u33853 \u23454 \u25937 \u21161 \u24453 \u36935 </div>\
+                            </div>\
+                        </div>\
+                        <div class="mt-4 pt-4 border-t border-slate-200">\
+                            <p class="text-sm text-slate-600"><strong>\uc0\u21327 \u35843 \u35201 \u28857 \u65306 </strong>\u25968 \u25454 \u23616 \u24314 \u31435 \u20027 \u39064 \u25968 \u25454 \u24211 \u26126 \u30830 \u29301 \u22836 \u37096 \u38376 \u65307 \u21508 \u37096 \u38376 \u25353 \u32479 \u19968 \u26631 \u20934 \u24402 \u38598 \u25968 \u25454 \u65292 \u30830 \u20445 "\u19968 \u25968 \u19968 \u28304 "\u65307 \u24314 \u31435 \u32852 \u21512 \u25480 \u26435 \u26426 \u21046 \u65292 \u22810 \u37096 \u38376 \u25968 \u25454 \u34701 \u21512 \u20351 \u29992 \u38656 \u21508 \u26041 \u21516 \u27493 \u23457 \u26680 \u12290 </p>\
+                        </div>\
+                    </div>\
+                </div>\
+\
+                <!-- \uc0\u22330 \u26223 \u19977  -->\
+                <div class="glass-panel rounded-2xl p-6 shadow-lg">\
+                    <div class="flex items-center mb-4">\
+                        <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3">\
+                            <span class="text-red-600 font-bold">03</span>\
+                        </div>\
+                        <h3 class="text-xl font-bold text-slate-800">\uc0\u24212 \u24613 \u29366 \u24577 \u25968 \u25454 \u27719 \u20132 </h3>\
+                        <span class="ml-4 px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">\uc0\u32511 \u33394 \u36890 \u36947 </span>\
+                    </div>\
+                    <div class="grid md:grid-cols-3 gap-4">\
+                        <div class="flex items-start p-4 bg-red-50 rounded-lg border border-red-200">\
+                            <svg class="w-5 h-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>\
+                            <div>\
+                                <h4 class="font-bold text-red-800 text-sm mb-1">\uc0\u31616 \u21270 \u27969 \u31243 </h4>\
+                                <p class="text-xs text-red-700">\uc0\u31361 \u21457 \u20844 \u20849 \u21355 \u29983 \u20107 \u20214 \u26102 \u65292 \u23454 \u34892 "\u20808 \u27719 \u20132 \u12289 \u21518 \u34917 \u25163 \u32493 "</p>\
+                            </div>\
+                        </div>\
+                        <div class="flex items-start p-4 bg-red-50 rounded-lg border border-red-200">\
+                            <svg class="w-5 h-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>\
+                            <div>\
+                                <h4 class="font-bold text-red-800 text-sm mb-1">\uc0\u24555 \u36895 \u21709 \u24212 </h4>\
+                                <p class="text-xs text-red-700">\uc0\u24314 \u31435 \u32511 \u33394 \u36890 \u36947 \u65292 \u25968 \u25454 24\u23567 \u26102 \u20869 \u23436 \u25104 \u20849 \u20139 </p>\
+                            </div>\
+                        </div>\
+                        <div class="flex items-start p-4 bg-red-50 rounded-lg border border-red-200">\
+                            <svg class="w-5 h-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>\
+                            <div>\
+                                <h4 class="font-bold text-red-800 text-sm mb-1">\uc0\u25216 \u26415 \u20445 \u38556 </h4>\
+                                <p class="text-xs text-red-700">\uc0\u25968 \u25454 \u23616 \u25552 \u20379 \u25216 \u26415 \u20445 \u38556 \u65292 \u30830 \u20445 \u24179 \u21488 \u31283 \u23450 \u36816 \u34892 </p>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- Section 5: \uc0\u30417 \u30563 \u32771 \u26680  -->\
+        <section class="animate-fade-in stagger-4">\
+            <div class="flex items-center mb-8">\
+                <div class="w-1 h-8 bg-blue-600 rounded-full mr-4"></div>\
+                <h2 class="text-3xl font-bold text-slate-800">\uc0\u30417 \u30563 \u32771 \u26680 \u26426 \u21046 </h2>\
+            </div>\
+\
+            <div class="grid lg:grid-cols-2 gap-8">\
+                <!-- \uc0\u36827 \u24230 \u31649 \u29702  -->\
+                <div class="glass-panel rounded-2xl p-6 shadow-lg">\
+                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center">\
+                        <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>\
+                        \uc0\u36827 \u24230 \u31649 \u29702 \u21046 \u24230 \
+                    </h3>\
+                    <div class="space-y-4">\
+                        <div class="flex items-center p-4 bg-white rounded-lg border border-slate-200">\
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">\
+                                <span class="text-blue-600 font-bold text-sm">\uc0\u26085 </span>\
+                            </div>\
+                            <div>\
+                                <h4 class="font-bold text-slate-800">\uc0\u26085 \u32479 \u35745 </h4>\
+                                <p class="text-sm text-slate-600">\uc0\u25968 \u25454 \u23616 \u27599 \u26085 \u30417 \u27979 \u21508 \u37096 \u38376 \u27719 \u20132 \u25968 \u25454 \u37327 \u12289 \u36136 \u37327 \u24773 \u20917 </p>\
+                            </div>\
+                        </div>\
+                        <div class="flex items-center p-4 bg-white rounded-lg border border-slate-200">\
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">\
+                                <span class="text-amber-600 font-bold text-sm">\uc0\u21608 </span>\
+                            </div>\
+                            <div>\
+                                <h4 class="font-bold text-slate-800">\uc0\u21608 \u25253 \u36865 </h4>\
+                                <p class="text-sm text-slate-600">\uc0\u21508 \u37096 \u38376 \u27599 \u21608 \u25253 \u36865 \u27719 \u20132 \u36827 \u24230 \u12289 \u23384 \u22312 \u38382 \u39064 </p>\
+                            </div>\
+                        </div>\
+                        <div class="flex items-center p-4 bg-white rounded-lg border border-slate-200">\
+                            <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">\
+                                <span class="text-emerald-600 font-bold text-sm">\uc0\u26376 </span>\
+                            </div>\
+                            <div>\
+                                <h4 class="font-bold text-slate-800">\uc0\u26376 \u36890 \u25253 </h4>\
+                                <p class="text-sm text-slate-600">\uc0\u27599 \u26376 \u36890 \u25253 \u21508 \u37096 \u38376 \u27719 \u20132 \u23436 \u25104 \u29575 \u12289 \u25968 \u25454 \u36136 \u37327 \u35780 \u20998 </p>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+\
+                <!-- \uc0\u32771 \u26680 \u32500 \u24230  -->\
+                <div class="glass-panel rounded-2xl p-6 shadow-lg">\
+                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center">\
+                        <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>\
+                        \uc0\u32771 \u26680 \u35780 \u20215 \u20307 \u31995 \
+                    </h3>\
+                    <div class="space-y-4">\
+                        <div class="flex items-center justify-between p-4 bg-white rounded-lg border-l-4 border-blue-500">\
+                            <div>\
+                                <h4 class="font-bold text-slate-800">\uc0\u27719 \u20132 \u23436 \u25972 \u24615 </h4>\
+                                <p class="text-xs text-slate-600">\uc0\u36131 \u20219 \u28165 \u21333 \u25968 \u25454 \u39033 \u24402 \u38598 \u29575 \u12289 \u25968 \u25454 \u35760 \u24405 \u23436 \u25972 \u29575 </p>\
+                            </div>\
+                            <div class="text-2xl font-bold text-blue-600">30%</div>\
+                        </div>\
+                        <div class="flex items-center justify-between p-4 bg-white rounded-lg border-l-4 border-amber-500">\
+                            <div>\
+                                <h4 class="font-bold text-slate-800">\uc0\u27719 \u20132 \u21450 \u26102 \u24615 </h4>\
+                                <p class="text-xs text-slate-600">\uc0\u25968 \u25454 \u26356 \u26032 \u21608 \u26399 \u36798 \u26631 \u29575 \u12289 \u24310 \u36831 \u26356 \u26032 \u27425 \u25968 </p>\
+                            </div>\
+                            <div class="text-2xl font-bold text-amber-600">25%</div>\
+                        </div>\
+                        <div class="flex items-center justify-between p-4 bg-white rounded-lg border-l-4 border-emerald-500">\
+                            <div>\
+                                <h4 class="font-bold text-slate-800">\uc0\u25968 \u25454 \u20934 \u30830 \u24615 </h4>\
+                                <p class="text-xs text-slate-600">\uc0\u25968 \u25454 \u38169 \u35823 \u29575 \u12289 \u26657 \u26680 \u30003 \u35831 \u22788 \u29702 \u21450 \u26102 \u29575 </p>\
+                            </div>\
+                            <div class="text-2xl font-bold text-emerald-600">25%</div>\
+                        </div>\
+                        <div class="flex items-center justify-between p-4 bg-white rounded-lg border-l-4 border-purple-500">\
+                            <div>\
+                                <h4 class="font-bold text-slate-800">\uc0\u21327 \u21516 \u37197 \u21512 \u24230 </h4>\
+                                <p class="text-xs text-slate-600">\uc0\u21327 \u35843 \u21709 \u24212 \u36895 \u24230 \u12289 \u38382 \u39064 \u22788 \u29702 \u28385 \u24847 \u24230 </p>\
+                            </div>\
+                            <div class="text-2xl font-bold text-purple-600">20%</div>\
+                        </div>\
+                    </div>\
+                    <div class="mt-4 p-3 bg-slate-100 rounded-lg text-center text-sm text-slate-600">\
+                        <strong>\uc0\u32467 \u26524 \u36816 \u29992 \u65306 </strong>\u32435 \u20837 \u37096 \u38376 \u24180 \u24230 \u32489 \u25928 \u32771 \u26680 \u65292 \u25512 \u36827 \u19981 \u21147 \u32422 \u35848 \u25972 \u25913 \u65292 \u25104 \u25928 \u31361 \u20986 \u36890 \u25253 \u34920 \u25196 \
+                    </div>\
+                </div>\
+            </div>\
+\
+            <!-- \uc0\u20105 \u35758 \u22788 \u29702  -->\
+            <div class="mt-8 glass-panel rounded-2xl p-6 shadow-lg">\
+                <h3 class="text-xl font-bold text-slate-800 mb-6">\uc0\u20105 \u35758 \u22788 \u29702 \u19982 \u38382 \u36131 \u26426 \u21046 </h3>\
+                <div class="grid md:grid-cols-3 gap-4">\
+                    <div class="p-4 bg-red-50 rounded-xl border border-red-200">\
+                        <div class="flex items-center mb-3">\
+                            <svg class="w-5 h-5 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>\
+                            <h4 class="font-bold text-red-800">\uc0\u26080 \u27491 \u24403 \u29702 \u30001 \u25298 \u32477 \u27719 \u20132 </h4>\
+                        </div>\
+                        <p class="text-sm text-red-700">\uc0\u30001 \u25968 \u25454 \u20027 \u31649 \u37096 \u38376 \u36131 \u20196 \u38480 \u26399 \u25972 \u25913 \u65292 \u25298 \u19981 \u25972 \u25913 \u30340 \u20104 \u20197 \u36890 \u25253 </p>\
+                    </div>\
+                    <div class="p-4 bg-amber-50 rounded-xl border border-amber-200">\
+                        <div class="flex items-center mb-3">\
+                            <svg class="w-5 h-5 text-amber-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>\
+                            <h4 class="font-bold text-amber-800">\uc0\u25968 \u25454 \u36136 \u37327 \u38382 \u39064 </h4>\
+                        </div>\
+                        <p class="text-sm text-amber-700">\uc0\u36830 \u32493 3\u20010 \u26376 \u25968 \u25454 \u36136 \u37327 \u35780 \u20998 \u20302 \u20110 80\u20998 \u30340 \u65292 \u26242 \u20572 \u20854 \u25968 \u25454 \u20351 \u29992 \u26435 \u38480 </p>\
+                    </div>\
+                    <div class="p-4 bg-slate-100 rounded-xl border border-slate-300">\
+                        <div class="flex items-center mb-3">\
+                            <svg class="w-5 h-5 text-slate-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>\
+                            <h4 class="font-bold text-slate-800">\uc0\u25797 \u33258 \u32456 \u27490 \u26381 \u21153 </h4>\
+                        </div>\
+                        <p class="text-sm text-slate-700">\uc0\u25968 \u25454 \u25552 \u20379 \u37096 \u38376 \u26080 \u27491 \u24403 \u29702 \u30001 \u19981 \u24471 \u32456 \u27490 \u27719 \u20132 \u65292 \u30830 \u38656 \u32456 \u27490 \u30340 \u39035 \u19982 \u38656 \u27714 \u37096 \u38376 \u21327 \u21830 \u24182 \u25253 \u25968 \u25454 \u20027 \u31649 \u37096 \u38376 \u22791 \u26696 </p>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- Section 6: \uc0\u23454 \u26045 \u36335 \u32447 \u22270  -->\
+        <section class="animate-fade-in stagger-4 mb-16">\
+            <div class="flex items-center mb-8">\
+                <div class="w-1 h-8 bg-blue-600 rounded-full mr-4"></div>\
+                <h2 class="text-3xl font-bold text-slate-800">\uc0\u23454 \u26045 \u36335 \u32447 \u22270 </h2>\
+            </div>\
+\
+            <div class="glass-panel rounded-2xl p-8 shadow-lg">\
+                <div class="space-y-8">\
+                    <div class="timeline-item">\
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">\
+                            <h3 class="text-lg font-bold text-slate-800">\uc0\u31609 \u22791 \u21551 \u21160 \u26399 </h3>\
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium w-fit mt-2 md:mt-0">\uc0\u31532 1-2\u26376 </span>\
+                        </div>\
+                        <div class="bg-white rounded-lg p-4 border border-slate-200">\
+                            <p class="text-slate-600 mb-3">\uc0\u25104 \u31435 \u39046 \u23548 \u23567 \u32452 \u21644 \u24037 \u20316 \u19987 \u29677 \u65307 \u21046 \u23450 \u23454 \u26045 \u26041 \u26696 \u65307 \u24320 \u23637 \u36164 \u28304 \u25720 \u24213 </p>\
+                            <div class="flex flex-wrap gap-2">\
+                                <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-xs">\uc0\u32452 \u32455 \u26550 \u26500 \u24314 \u31435 </span>\
+                                <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-xs">\uc0\u25968 \u25454 \u36164 \u28304 \u24213 \u25968 \u25720 \u28165 </span>\
+                            </div>\
+                        </div>\
+                    </div>\
+\
+                    <div class="timeline-item">\
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">\
+                            <h3 class="text-lg font-bold text-slate-800">\uc0\u30446 \u24405 \u32534 \u21046 \u26399 </h3>\
+                            <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm font-medium w-fit mt-2 md:mt-0">\uc0\u31532 3-4\u26376 </span>\
+                        </div>\
+                        <div class="bg-white rounded-lg p-4 border border-slate-200">\
+                            <p class="text-slate-600 mb-3">\uc0\u32534 \u21046 \u25968 \u25454 \u30446 \u24405 \u65307 \u24320 \u23637 \u20379 \u38656 \u23545 \u25509 \u65307 \u30830 \u23450 \u27719 \u20132 \u28165 \u21333 </p>\
+                            <div class="flex flex-wrap gap-2">\
+                                <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-xs">\uc0\u25968 \u25454 \u27719 \u20132 \u36131 \u20219 \u28165 \u21333 \u21457 \u24067 </span>\
+                            </div>\
+                        </div>\
+                    </div>\
+\
+                    <div class="timeline-item">\
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">\
+                            <h3 class="text-lg font-bold text-slate-800">\uc0\u38598 \u20013 \u27719 \u20132 \u26399 </h3>\
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium w-fit mt-2 md:mt-0">\uc0\u31532 5-10\u26376 </span>\
+                        </div>\
+                        <div class="bg-white rounded-lg p-4 border border-slate-200">\
+                            <p class="text-slate-600 mb-3">\uc0\u20998 \u25209 \u25512 \u36827 \u25968 \u25454 \u24402 \u38598 \u65307 \u24314 \u31435 \u26356 \u26032 \u26426 \u21046 \u65307 \u24320 \u23637 \u36136 \u37327 \u27835 \u29702 </p>\
+                            <div class="flex flex-wrap gap-2">\
+                                <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-xs">\uc0\u26680 \u24515 \u25968 \u25454 \u23436 \u25104 \u27719 \u20132 </span>\
+                            </div>\
+                        </div>\
+                    </div>\
+\
+                    <div class="timeline-item">\
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">\
+                            <h3 class="text-lg font-bold text-slate-800">\uc0\u20248 \u21270 \u23436 \u21892 \u26399 </h3>\
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium w-fit mt-2 md:mt-0">\uc0\u31532 11-12\u26376 </span>\
+                        </div>\
+                        <div class="bg-white rounded-lg p-4 border border-slate-200">\
+                            <p class="text-slate-600 mb-3">\uc0\u23436 \u21892 \u21327 \u35843 \u26426 \u21046 \u65307 \u20248 \u21270 \u24179 \u21488 \u21151 \u33021 \u65307 \u24314 \u31435 \u38271 \u25928 \u26426 \u21046 </p>\
+                            <div class="flex flex-wrap gap-2">\
+                                <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-xs">\uc0\u24179 \u21488 \u27491 \u24335 \u36816 \u34892 </span>\
+                                <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-xs">\uc0\u21046 \u24230 \u20307 \u31995 \u23436 \u21892 </span>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- \uc0\u26680 \u24515 \u35201 \u28857 \u24635 \u32467  -->\
+        <section class="animate-fade-in stagger-4">\
+            <div class="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 rounded-2xl p-8 text-white shadow-2xl">\
+                <h2 class="text-2xl font-bold mb-6 flex items-center">\
+                    <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>\
+                    \uc0\u26680 \u24515 \u35201 \u28857 \u24635 \u32467 \
+                </h2>\
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">\
+                    <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">\
+                        <div class="text-blue-300 font-bold mb-2">01</div>\
+                        <p class="text-sm">\uc0\u26126 \u30830 \u25968 \u25454 \u23616 \u20316 \u20026 \u21327 \u35843 \u20013 \u26530 \u65292 \u21457 \u25381 \u20379 \u38656 \u23545 \u25509 \u12289 \u20105 \u35758 \u21327 \u35843 \u12289 \u36827 \u24230 \u30563 \u21150 \u12289 \u36136 \u37327 \u31649 \u25511 \u12289 \u23433 \u20840 \u20998 \u25285 \u20116 \u22823 \u20316 \u29992 </p>\
+                    </div>\
+                    <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">\
+                        <div class="text-blue-300 font-bold mb-2">02</div>\
+                        <p class="text-sm">\uc0\u21387 \u23454 \u21355 \u29983 \u20581 \u24247 \u37096 \u38376 \u20316 \u20026 \u21307 \u30103 \u25968 \u25454 \u20027 \u35201 \u25968 \u28304 \u37096 \u38376 \u36131 \u20219 \u65292 \u30830 \u20445 "\u19968 \u25968 \u19968 \u28304 \u12289 \u19968 \u28304 \u22810 \u29992 "</p>\
+                    </div>\
+                    <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">\
+                        <div class="text-blue-300 font-bold mb-2">03</div>\
+                        <p class="text-sm">\uc0\u24314 \u31435 "\u19994 \u21153 \u21327 \u21830 \u8594 \u19987 \u29677 \u21327 \u35843 \u8594 \u21150 \u20844 \u23460 \u21327 \u35843 \u8594 \u39046 \u23548 \u23567 \u32452 \u20915 \u31574 "\u22235 \u32423 \u36882 \u36827 \u21327 \u35843 \u20307 \u31995 </p>\
+                    </div>\
+                    <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">\
+                        <div class="text-blue-300 font-bold mb-2">04</div>\
+                        <p class="text-sm">\uc0\u24314 \u31435 \u20174 \u30446 \u24405 \u32534 \u21046 \u12289 \u25968 \u25454 \u24402 \u38598 \u12289 \u26356 \u26032 \u32500 \u25252 \u21040 \u26657 \u26680 \u32416 \u38169 \u30340 \u20840 \u36807 \u31243 \u36136 \u37327 \u31649 \u29702 \u20307 \u31995 </p>\
+                    </div>\
+                    <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">\
+                        <div class="text-blue-300 font-bold mb-2">05</div>\
+                        <p class="text-sm">\uc0\u36890 \u36807 \u32771 \u26680 \u35780 \u20215 \u12289 \u36890 \u25253 \u34920 \u25196 \u12289 \u32422 \u35848 \u38382 \u36131 \u31561 \u25163 \u27573 \u65292 \u24314 \u31435 \u28608 \u21169 \u32422 \u26463 \u24182 \u37325 \u30340 \u25512 \u36827 \u26426 \u21046 </p>\
+                    </div>\
+                    <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">\
+                        <div class="text-blue-300 font-bold mb-2">06</div>\
+                        <p class="text-sm">\uc0\u22362 \u23432 \u25968 \u25454 \u23433 \u20840 \u24213 \u32447 \u65292 \u23454 \u34892 \u20998 \u31867 \u20998 \u32423 \u31649 \u29702 \u65292 \u20005 \u26684 \u33853 \u23454 \u25968 \u25454 \u23433 \u20840 \u20445 \u25252 \u20041 \u21153 </p>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+    </main>\
+\
+    <!-- Footer -->\
+    <footer class="bg-slate-900 text-slate-400 py-8 mt-16">\
+        <div class="container mx-auto px-6 text-center text-sm">\
+            <p>\uc0\u20381 \u25454 \u12298 \u25919 \u21153 \u25968 \u25454 \u20849 \u20139 \u26465 \u20363 \u12299 \u12298 \u20840 \u22269 \u19968 \u20307 \u21270 \u25919 \u21153 \u22823 \u25968 \u25454 \u20307 \u31995 \u24314 \u35774 \u25351 \u21335 \u12299 \u21450 \u30456 \u20851 \u25919 \u31574 \u25991 \u20214 \u32534 \u21046 </p>\
+        </div>\
+    </footer>\
+\
+    <script>\
+        function switchTab(stage) \{\
+            // \uc0\u38544 \u34255 \u25152 \u26377 \u20869 \u23481 \
+            document.getElementById('content-stage1').classList.add('hidden');\
+            document.getElementById('content-stage2').classList.add('hidden');\
+            document.getElementById('content-stage3').classList.add('hidden');\
+            \
+            // \uc0\u37325 \u32622 \u25152 \u26377 \u26631 \u31614 \u26679 \u24335 \
+            document.getElementById('tab-stage1').classList.remove('tab-active');\
+            document.getElementById('tab-stage1').classList.add('tab-inactive');\
+            document.getElementById('tab-stage2').classList.remove('tab-active');\
+            document.getElementById('tab-stage2').classList.add('tab-inactive');\
+            document.getElementById('tab-stage3').classList.remove('tab-active');\
+            document.getElementById('tab-stage3').classList.add('tab-inactive');\
+            \
+            // \uc0\u26174 \u31034 \u36873 \u20013 \u20869 \u23481 \
+            document.getElementById('content-' + stage).classList.remove('hidden');\
+            \
+            // \uc0\u35774 \u32622 \u36873 \u20013 \u26631 \u31614 \u26679 \u24335 \
+            document.getElementById('tab-' + stage).classList.remove('tab-inactive');\
+            document.getElementById('tab-' + stage).classList.add('tab-active');\
+        \}\
+\
+        // \uc0\u28155 \u21152 \u28378 \u21160 \u21160 \u30011 \u35266 \u23519 \u22120 \
+        const observerOptions = \{\
+            root: null,\
+            rootMargin: '0px',\
+            threshold: 0.1\
+        \};\
+\
+        const observer = new IntersectionObserver((entries) => \{\
+            entries.forEach(entry => \{\
+                if (entry.isIntersecting) \{\
+                    entry.target.style.opacity = '1';\
+                    entry.target.style.transform = 'translateY(0)';\
+                \}\
+            \});\
+        \}, observerOptions);\
+\
+        document.querySelectorAll('.animate-fade-in').forEach((el) => \{\
+            el.style.opacity = '0';\
+            el.style.transform = 'translateY(20px)';\
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';\
+            observer.observe(el);\
+        \});\
+    </script>\
+</body>\
+</html>\
+```}
